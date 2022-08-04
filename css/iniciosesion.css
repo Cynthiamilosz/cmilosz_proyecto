@@ -1,35 +1,58 @@
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 body{
     margin: 0;
     padding: 0%;
 }
+
+
 header{
     display: flex;
     background-image: url(../img/camibarraheader00.png);
     background-repeat: no-repeat;
     justify-content: space-around;
     align-items: flex-end;
+    background-size: cover;
     border-bottom: 5px solid white;
+    
     }
-    .header-menu{
-        display: flex;
-        list-style-type: none;
-        margin-right: 20px;
-        max-width: 992px;
-        width: max-content;
-        
-    }
-    .header-menu_visible{
-        left: 0px;
+.header-menu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    max-width: 992px;
+    width: max-content;
     
-    }  
+}
+.header-menu_visible{
+    left: 0px;
+
+}   
+.header-menu li{
+    display: inline-block;
+    margin: 5px 
     
-    .header-menu li{
-        display: inline-block;
+}
+.navbar a:hover{
+    background-color: lavender;
+        color: rgba(0, 0, 0, 0.623);
+       
+    transition: 0.5s;
+  }
+
+.navbar {
+    background-color: transparent !important;
+    display: inline-block;
     
-        margin: 5px;  
-    }
-    
+    margin-right: 20px;
+    max-width: 992px;
+    width: max-content;
+   
+    background-repeat: no-repeat;
+
+  }
+  
+
     
     @media only screen and (max-width:900px){
         body{
