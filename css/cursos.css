@@ -241,34 +241,7 @@ nav a{
     column-gap: 15%;
 }
 
-.redessociales li{
-    display: inline-block;
-
-    text-align: center;
-    align-content: center;
-    width: max-content;
-}
-
-.footer h5{
-    text-align: end;
-    font-family: sans-serif;
-    margin-left: 75px;
-    color: rgb(0, 0, 0);
-    font-size: 12pt;
+#redes-icons{
+    font-size: 50px;
     
-
 }
-
-.footer button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    margin-left: 155px;
-    background-color: rgb(137, 116, 177);
-    height: 40px;
-    margin-top: 5px;
-    color: white;
-    letter-spacing: 1px;
-} 
-  
