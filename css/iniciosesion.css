@@ -130,6 +130,41 @@ header{
     
     }
 
+
+    @media only screen and (max-width: 900px ) {
+        main {
+            display: flex;
+            background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
+            background-size: 100%;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            padding-top: 4%;
+            padding-bottom: 7%;
+            background-repeat: no-repeat;
+            
+            
+         }
+
+        #imgformmobile{
+            display: none;
+            
+         }
+         
+        #iniciarsesion form{
+            background-color:rgba(100, 148, 237, 0.788);
+            width: 90%;
+            padding: 5%;  
+            margin: 5%;
+            
+        }
+        
+        
+    
+    }
+
+
     .logo{
         display: flex;
         align-items: center;
@@ -168,55 +203,64 @@ header{
             #mobilemenu{
                 display: none;
             }
+
+            #grillaform1{
+                display: grid;
+                grid-template-columns: 60% 37%;
+                grid-template-rows: 600px;
+                grid-template-areas: "foto1 iniciarsesion" ;
+                justify-content: space-evenly;
+                padding-bottom: 5px;
+                object-fit: cover;
+            
+                
+                
+            
+            }
+            
+            .imgform{
+                display: grid;
+                grid-area: foto1;
+               
+                width: 100%;
+                height: 100%;
+                justify-self: center;
+                align-self: center;
+                object-fit: cover;
+                
+                
+            }
+            #form{
+                display: grid;
+                grid-area: iniciarsesion;
+                
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                background-color: cornflowerblue;
+                padding: 15px 15px;
+                box-sizing: border-box;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                border-radius: 7px;
+                font-family: sans-serif;
+                color: aliceblue;
+                justify-self: center;
+                align-self: center;
+                
+            }
+
+
+
+
+
+
+
         }
 
 
 
-#grillaform1{
-    display: grid;
-    grid-template-columns: 60% 37%;
-    grid-template-rows: 600px;
-    grid-template-areas: "foto1 iniciarsesion" ;
-    justify-content: space-evenly;
-    padding-bottom: 5px;
-    object-fit: cover;
 
-    
-    
-
-}
-
-.imgform{
-    display: grid;
-    grid-area: foto1;
-    
-    width: 100%;
-    height: 100%;
-    justify-self: center;
-    align-self: center;
-    object-fit: cover;
-    
-    
-}
-#form{
-    display: grid;
-    grid-area: iniciarsesion;
-    
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background-color: cornflowerblue;
-    padding: 15px 15px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    border-radius: 7px;
-    font-family: sans-serif;
-    color: aliceblue;
-    justify-self: center;
-    align-self: center;
-    
-}
 
 #form legend{
     color: aliceblue;

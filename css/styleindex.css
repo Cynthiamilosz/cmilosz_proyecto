@@ -117,22 +117,7 @@ header{
         
     }
    
-    
-    #v2{
-        visibility: hidden;
-    }
-    
-    #v4{
-        visibility: hidden;
-    }
-    
-    #v6{
-        visibility: hidden;
-    }
-    
-    #v8{
-        visibility: hidden;
-    }
+   
    
     #blog{
    padding-left: 7%;
@@ -140,26 +125,6 @@ header{
    justify-content: center;
    align-content:center ;
    
-}
-#v1{
-    width: 250px;
-    justify-content: space-around;
-    align-content: space-between;
-}
-#v3{
-    width: 250px;
-    justify-content: space-around;
-    align-content: space-between;
-}
-#v5{
-    width: 250px;
-    justify-content: space-around;
-    align-content: space-between;
-}
-#v7{
-    width: 250px;
-    justify-content: space-around;
-    align-content: space-between;
 }
 
 
@@ -256,7 +221,7 @@ nav a{
 
 .carrusel{
     display: flex;
-    max-height: 500px;
+    max-height: 100%;
     
 }
 .tarjetas{
@@ -264,9 +229,10 @@ nav a{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5px;
     
+    background-color:  thistle;
+    padding: 5%;
     
 }
 
@@ -275,9 +241,11 @@ nav a{
     max-width: 300px;
     height: 200px;
     text-align: center;
-    padding: 5px;
+
+    padding: 10px;
     margin-left: 30px;
     margin-right: 30px;
+    padding-top: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 50px;
     color: rgb(255, 255, 255);
@@ -285,82 +253,39 @@ nav a{
     
 }
 
-#grilla{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas: "blog";
-    justify-content: center;
-    align-content: center;
-    
-    
-          
-    }
-
 #blog{
-   display: grid;
-   height: 110%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40% 40% 5%;
-    grid-area:blog;
-    grid-template-areas: "video1 video2 video3 video4"
-                        "video5 video6 video7 video8"
-                        "boton boton boton boton";
-   background-color:  thistle;
-   border-radius: 7px;
-   justify-content: space-evenly;
-   align-content:space-around ;
-   margin-bottom: 5px;
-   padding-top: 10px;
+    padding: 5px 0px 5px 5px;
 }
-#v1{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
+
+#videos{
+  display: flex;
+  overflow-y: auto;
   
+  width:100%;
+   
+   justify-content: space-evenly;
+   flex-direction: row;
+   margin-bottom: 5px;
+   padding: 10px;
+   
+}
+
+#videos iframe{
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    margin-right: 5px;
+    border-radius: 10px;
+    width: 260px;
+    height: 210px;
     
 }
 
-#v2{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v3{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v4{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v5{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v6{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v7{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#v8{
-    justify-self: center;
-    border-radius: 10px;
-    overflow: hidden;
+#videos  :hover{
+   
+    transform: scale(1.1,1.1);
+    position: relative;
+    
 }
 
 #bot{
@@ -371,6 +296,7 @@ nav a{
     justify-self: center;
     align-self: center;  
     background-color: cornflowerblue;
+    margin-bottom: 10px;
     
 }
 
@@ -396,78 +322,20 @@ nav a{
 }
     
     
-#v1 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
 
-#v2 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v3 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v4 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v5 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v6 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v7 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
-#v8 :hover{
-    color: aliceblue;
-    transform: scale(1.1,1.1);
-    position: relative;
-   border-radius: 15px;
-   box-shadow: black;
-}
 
-#top10{
-    
-    margin: 5% 0% 0% 0%;
-   
-   
-}
 
 #cursospopulares{
+    margin-top: 0%;
+    margin-bottom: 10px;
     display: flex;
     width: 95%;
-    margin-left: 2.2%;
+    margin-left: 2.4%;
     justify-content: center;
     align-content: center;
     background: none;
+    
+    border: none;
     
 }
 #cursospopulares :hover{
@@ -483,13 +351,14 @@ nav a{
 
 #cursospopulares img{
    width: 100%;  
+   
 
 }
 
 .footer{
     
     background-color: rgb(228, 228, 228);
-    margin-top: 14px;
+    margin-top: 15px;
 }
 
 .footercontent{
