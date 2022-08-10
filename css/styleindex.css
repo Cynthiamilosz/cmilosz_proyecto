@@ -260,6 +260,7 @@ nav a{
 #videos{
   display: flex;
   overflow-y: auto;
+  overflow-x: hidden;
   
   width:100%;
    
