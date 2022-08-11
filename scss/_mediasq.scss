@@ -1,0 +1,139 @@
+@media only screen and (max-width:900px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .header-menu{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(137, 116, 177);
+        position: fixed;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        padding: 20px 0;
+        overflow-y: auto;
+
+    }
+ .header-menu  li  a :hover{
+     transform: scale(1);
+ } 
+    
+    nav a:hover{
+        background-color: lavender;
+        color: rgba(0, 0, 0, 0.623);
+    }
+
+   
+
+    .iconomenu{
+        display: flex;
+        background: none;
+        cursor: pointer;
+        border: none;
+        font-size: 10px;
+        padding: 0px 0px 30px 60%;
+        line-height: 60px;
+        display: block;
+
+    }
+    #mobilemenu:checked ~ .header-menu{ 
+        height: 140px;
+        visibility: visible;
+        opacity: 1;
+        transition: all 300ms ease;
+        
+    } 
+
+    .carrusel{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tarjetas{
+        flex-direction: column;
+        
+        
+    }
+   
+   
+   
+    #blog{
+   padding-left: 0%;
+   
+   justify-content: center;
+   align-content:center ;
+   
+}
+
+
+
+#bot{
+    margin-right: 7%;
+    
+    justify-self: center;
+    align-self: center; 
+    
+}
+
+
+
+#cursospopulares{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+   margin-left: 0%;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    
+}
+
+.footercontent{
+    padding-right: 30%;
+    padding-top: 20%;
+    margin-right: 30%;
+    padding-bottom:0 ;
+    
+}
+
+.redessociales li{
+   
+   flex-direction: row;
+    margin-left: 60%;
+    
+    
+}
+
+.footer h5{
+margin-top: 25%;
+
+
+}
+
+
+}
+
+
+
+
+
+@media ( min-width: 900px){
+    .iconomenu{
+        
+        display: none;
+
+    }
+    #mobilemenu{
+        display: none;
+    }
+   
+    
+  
+}

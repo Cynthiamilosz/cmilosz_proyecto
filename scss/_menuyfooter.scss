@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+
+header{
+    display: flex;
+    background-image: url(../img/camibarraheader00.png);
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-size: cover;
+    border-bottom: 5px solid white;
+    .navbar {
+        background-color: transparent !important;
+        display: inline-block;
+        
+        margin-right: 20px;
+        max-width: 992px;
+        width: max-content;
+       
+        background-repeat: no-repeat;
+
+
+        a:hover{
+            background-color: lavender;
+                color: rgba(0, 0, 0, 0.623);
+               
+            transition: 0.5s;
+          }
+      }
+    }
+     
+    
+.header-menu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    max-width: 992px;
+    width: max-content;
+
+    li{
+        display: inline-block;
+        margin: 5px 
+        
+    }
+    
+}
+ 
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+nav{
+    a{
+        font-family: sans-serif;
+        font-size: 11.5pt;
+        color: rgb(254, 251, 255);
+        border: darkorchid;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        border-radius: 7px;  
+        text-decoration: none;
+        
+    }
+
+}
+ 
+
+
+
+
+
+.footer{
+    
+    background-color: rgb(228, 228, 228);
+    margin-top: 15px;
+
+    .footercontent{
+        display: flex;
+        padding: 1% 0% 2% 2%;
+        column-gap: 15%;
+    }
+}
+
+
+
+#redes-icons{
+    font-size: 50px;
+    
+}
+
