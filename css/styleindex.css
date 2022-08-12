@@ -11,17 +11,6 @@ header {
   align-items: flex-end;
   background-size: cover;
   border-bottom: 5px solid white; }
-  header .navbar {
-    background-color: transparent !important;
-    display: inline-block;
-    margin-right: 20px;
-    max-width: 992px;
-    width: max-content;
-    background-repeat: no-repeat; }
-    header .navbar a:hover {
-      background-color: lavender;
-      color: rgba(0, 0, 0, 0.623);
-      transition: 0.5s; }
 
 .header-menu {
   display: flex;
@@ -32,6 +21,18 @@ header {
   .header-menu li {
     display: inline-block;
     margin: 5px; }
+
+.navbar {
+  background-color: transparent !important;
+  display: inline-block;
+  margin-right: 20px;
+  max-width: 992px;
+  width: max-content;
+  background-repeat: no-repeat; }
+  .navbar a:hover {
+    background-color: lavender;
+    color: rgba(0, 0, 0, 0.623);
+    transition: 0.5s; }
 
 .logo {
   display: flex;
@@ -50,7 +51,7 @@ nav a {
 .footer {
   background-color: #e4e4e4;
   margin-top: 15px; }
-  .footer .footercontent {
+  .footerfootercontent {
     display: flex;
     padding: 1% 0% 2% 2%;
     column-gap: 15%; }
@@ -70,41 +71,43 @@ nav a {
   margin-top: 5px;
   background-color: thistle;
   padding: 5%; }
-  .tarjetas .principio {
-    width: 35%;
-    max-width: 300px;
-    height: 200px;
-    text-align: center;
-    padding: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 5%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 50px;
-    color: white;
-    background-color: cornflowerblue; }
+
+.principio {
+  width: 35%;
+  max-width: 300px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 50px;
+  color: white;
+  background-color: cornflowerblue; }
 
 #blog {
   padding: 5px 0px 5px 5px; }
-  #blog #videos {
-    display: flex;
-    overflow-y: auto;
+
+#videos {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-bottom: 5px;
+  padding: 10px; }
+  #videos iframe {
     width: 100%;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-bottom: 5px;
-    padding: 10px; }
-    #blog #videos iframe {
-      width: 100%;
-      display: flex;
-      object-fit: cover;
-      margin-right: 5px;
-      border-radius: 10px;
-      width: 260px;
-      height: 210px; }
-    #blog #videos :hover {
-      transform: scale(1.1, 1.1);
-      position: relative; }
+    display: flex;
+    object-fit: cover;
+    margin-right: 5px;
+    border-radius: 10px;
+    width: 260px;
+    height: 210px; }
+  #videos :hover {
+    transform: scale(1.1, 1.1);
+    position: relative; }
 
 #bot {
   display: grid;
@@ -167,8 +170,8 @@ nav a {
     visibility: hidden;
     padding: 20px 0;
     overflow-y: auto; }
-  .header-menu li a :hover {
-    transform: scale(1); }
+    .header-menu li a :hover {
+      transform: scale(1); }
   nav a:hover {
     background-color: lavender;
     color: rgba(0, 0, 0, 0.623); }

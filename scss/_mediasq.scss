@@ -18,10 +18,12 @@
         padding: 20px 0;
         overflow-y: auto;
 
+        li  a :hover{
+            transform: scale(1);
+        } 
+
     }
- .header-menu  li  a :hover{
-     transform: scale(1);
- } 
+ 
     
     nav a:hover{
         background-color: lavender;

@@ -13,60 +13,60 @@
     background-color: $rosado-fondos;
     padding: 5%;
 
-    .principio{
-        width: 35%;
-        max-width: 300px;
-        height: 200px;
-        text-align: center;
-    
-        padding: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        padding-top: 5%;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        border-radius: 50px;
-        color: rgb(255, 255, 255);
-        background-color: $blue-detalles;
-        
-    }
-
 }
 
+.principio{
+    width: 35%;
+    max-width: 300px;
+    height: 200px;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: $blue-detalles;
+    
+}
 
 
 #blog{
     padding: 5px 0px 5px 5px;
 
-    #videos{
-        display: flex;
-        overflow-y: auto;
-        width:100%;
-        justify-content: space-evenly;
-        flex-direction: row;
-        margin-bottom: 5px;
-        padding: 10px;
-
-
-         iframe{
-            width: 100%;
-            display: flex;
-            object-fit: cover;
-            margin-right: 5px;
-            border-radius: 10px;
-            width: 260px;
-            height: 210px;
-            
-        }
-
-        :hover{
-   
-            transform: scale(1.1,1.1);
-            position: relative;
-            
-        }
-     }
+  
 }
 
+#videos{
+    display: flex;
+    overflow-y: auto;
+    width:100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 5px;
+    padding: 10px;
+
+
+     iframe{
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+        margin-right: 5px;
+        border-radius: 10px;
+        width: 260px;
+        height: 210px;
+        
+    }
+
+    :hover{
+
+        transform: scale(1.1,1.1);
+        position: relative;
+        
+    }
+ }
 
 #bot{
     display: grid;

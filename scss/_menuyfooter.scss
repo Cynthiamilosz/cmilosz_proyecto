@@ -12,24 +12,7 @@ header{
     align-items: flex-end;
     background-size: cover;
     border-bottom: 5px solid white;
-    .navbar {
-        background-color: transparent !important;
-        display: inline-block;
-        
-        margin-right: 20px;
-        max-width: 992px;
-        width: max-content;
-       
-        background-repeat: no-repeat;
-
-
-        a:hover{
-            background-color: lavender;
-                color: rgba(0, 0, 0, 0.623);
-               
-            transition: 0.5s;
-          }
-      }
+    
     }
      
     
@@ -47,6 +30,25 @@ header{
     }
     
 }
+
+.navbar {
+    background-color: transparent !important;
+    display: inline-block;
+    
+    margin-right: 20px;
+    max-width: 992px;
+    width: max-content;
+   
+    background-repeat: no-repeat;
+
+
+    a:hover{
+        background-color: lavender;
+            color: rgba(0, 0, 0, 0.623);
+           
+        transition: 0.5s;
+      }
+  }
  
 .logo{
     display: flex;
@@ -80,7 +82,7 @@ nav{
     background-color: rgb(228, 228, 228);
     margin-top: 15px;
 
-    .footercontent{
+    &footercontent{
         display: flex;
         padding: 1% 0% 2% 2%;
         column-gap: 15%;
