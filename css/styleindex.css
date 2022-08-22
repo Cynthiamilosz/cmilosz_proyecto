@@ -59,12 +59,13 @@ nav a {
 #redes-icons {
   font-size: 50px; }
 
+.display, .carrusel, .tarjetas, #videos, #videos iframe, #cursospopulares {
+  display: flex; }
+
 .carrusel {
-  display: flex;
   max-height: 100%; }
 
 .tarjetas {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -75,6 +76,7 @@ nav a {
 .principio {
   width: 35%;
   max-width: 300px;
+  min-width: 200px;
   height: 200px;
   text-align: center;
   padding: 10px;
@@ -90,7 +92,6 @@ nav a {
   padding: 5px 0px 5px 5px; }
 
 #videos {
-  display: flex;
   overflow-y: auto;
   width: 100%;
   justify-content: space-evenly;
@@ -99,7 +100,6 @@ nav a {
   padding: 10px; }
   #videos iframe {
     width: 100%;
-    display: flex;
     object-fit: cover;
     margin-right: 5px;
     border-radius: 10px;
@@ -138,7 +138,6 @@ nav a {
 #cursospopulares {
   margin-top: 0%;
   margin-bottom: 10px;
-  display: flex;
   width: 98%;
   margin-left: 1%;
   justify-content: center;

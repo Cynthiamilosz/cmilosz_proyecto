@@ -1,10 +1,16 @@
-.carrusel{
+
+.display{
     display: flex;
+}
+
+
+.carrusel{
+    @extend .display;
     max-height: 100%;
     
 }
 .tarjetas{
-    display: flex;
+    @extend .display;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -15,20 +21,24 @@
 
 }
 
-.principio{
-    width: 35%;
+@mixin estiloprincipios ($ancho, $alto, $margenderecho, $margenizquierdo){
+    width: $ancho;
     max-width: 300px;
-    height: 200px;
+    min-width: 200px;
+    height: $alto;
     text-align: center;
-
     padding: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: $margenizquierdo;
+    margin-right: $margenderecho;
     padding-top: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 50px;
     color: rgb(255, 255, 255);
     background-color: $blue-detalles;
+}
+.principio{
+    @include estiloprincipios(35%, 200px, 30px, 30px)
+   
     
 }
 
@@ -40,7 +50,7 @@
 }
 
 #videos{
-    display: flex;
+    @extend .display;
     overflow-y: auto;
     width:100%;
     justify-content: space-evenly;
@@ -51,7 +61,7 @@
 
      iframe{
         width: 100%;
-        display: flex;
+        @extend .display;
         object-fit: cover;
         margin-right: 5px;
         border-radius: 10px;
@@ -107,7 +117,7 @@
 #cursospopulares{
     margin-top: 0%;
     margin-bottom: 10px;
-    display: flex;
+    @extend .display;
     width: 98%;
     margin-left: 1%;
     justify-content: center;
