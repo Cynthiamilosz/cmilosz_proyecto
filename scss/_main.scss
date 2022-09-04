@@ -1,4 +1,4 @@
-
+/*main index*/
 .display{
     display: flex;
 }
@@ -15,7 +15,6 @@
     align-items: center;
     gap: 40px;
     margin-top: 5px;
-    
     background-color: $rosado-fondos;
     padding: 5%;
 
@@ -27,10 +26,9 @@
     min-width: 200px;
     height: $alto;
     text-align: center;
-    padding: 10px;
     margin-left: $margenizquierdo;
     margin-right: $margenderecho;
-    padding-top: 5%;
+    padding-top: 4%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 50px;
     color: rgb(255, 255, 255);
@@ -38,35 +36,33 @@
 }
 .principio{
     @include estiloprincipios(35%, 200px, 30px, 30px)
-   
-    
 }
 
 
 #blog{
     padding: 5px 0px 5px 5px;
-
-  
+    
 }
 
 #videos{
     @extend .display;
     overflow-y: auto;
     width:100%;
+    height: 270px;
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 5px;
     padding: 10px;
-
-
+    
      iframe{
         width: 100%;
         @extend .display;
+        overflow-y:auto;
         object-fit: cover;
         margin-right: 5px;
         border-radius: 10px;
-        width: 260px;
-        height: 210px;
+        width: 240px;
+        height: 250px;
         
     }
 
@@ -96,7 +92,6 @@
     justify-self: center;
     align-self: auto; 
 
-
     a{
         font-family: sans-serif;
         font-size: 12pt;
@@ -108,7 +103,7 @@
         background-color: rgba(0, 30, 112, 0.623);
         transition: 0.5s;
         border-radius: 7px;  
-        padding: 8px 100px;
+        padding: 8px 48%;
     }
     
 }
@@ -130,10 +125,7 @@
     &:hover{
         transform: scale(1.1,1.1);
         border-radius: 15px;
-        box-shadow: black;
-        
-        
-        
+        box-shadow: black;   
     }
 
     img{
@@ -142,4 +134,201 @@
 
 }
 
+
+/*main cursos*/
+#botonescursos{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ }
+    
+ #botonescursos button:hover{
+    width: 70%;
+    transform: scale(1.1,1.1);  
+    border-radius: 15px;
+    box-shadow: black;
+    justify-self: center;
+    align-self: center;   
+ }
+ 
+ 
+ .botonesclases img{
+     width: 100%;
+ }
+ 
+
+/*main iniciar sesion*/
+
+#form legend{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.control{
+    
+    width: 98%;
+    background: rgba(229, 185, 250, 0.808);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;   
+}
+
+#form .registrar{
+    height: 40px;
+    text-align: center;
+    background-color: rgba(221, 171, 233, 0.952);
+    font-size: 15px;
+    color: black;
+}
+
+.recordar{
+    display: inline-block;
+    font-size: 14px;
+    padding: 0%;
+}
+#form .checkbox1{
+    size: 2%;
+    padding: 0;
+}
+
+.suscrib a{
+    color: aliceblue;   
+}
+.suscrib a:hover{
+    color: darkorchid;
+    text-decoration: underline;
+    transition: 300ms;    
+}
+
+
+/*main sobremi*/
+
+#sobremi{
+    background-color: thistle;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    height: 100%;    
+}
+
+.presentacion{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+   flex-wrap: wrap;
+   column-gap: 5%;  
+}
+
+.hola{
+    justify-content: space-between;
+    width:500px;  
+    height: 70%;  
+}
+
+.conteiner__card{   
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    top: 10%;
+    left: 40%;   
+    transform: translate(-50%, -50%);   
+}
+
+.sobremi1{
+    width: 100%;
+}
+.card{
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    object-fit: cover;
+}
+
+.cover__card{
+    width: 100%;
+    height: 250px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 100%;
+}
+
+.infoacademica{
+    margin-top: 15px;
+}
+
+
+/*main contacto*/
+
+#contacto {
+    background-image: url(../img/imgcomentario.webp);
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    background-repeat: no-repeat;  
+ }
+
+ .form2{   
+     width: 450px;
+     height: 500px;
+     margin: auto;   
+     background-color: rgba(204, 111, 247, 0.664);
+     padding: 30px 20px 30px 40px;
+     box-sizing: border-box;
+     border-radius: 7px;
+     font-family: sans-serif;
+ }
+ 
+ .consulta{
+     color: rgb(87, 10, 122);
+     font-size: 25px;
+     padding-bottom: 20px;
+ }
+ 
+ .control1{    
+     width: 350px;
+     padding: 5px;
+     border-radius: 5px;
+     border: none;
+     background-color: rgba(255, 255, 255, 0.856);
+     margin: auto;
+     margin-top: 5px;
+     margin-bottom: 10px;
+ }
+ 
+ .acuerdo{
+     display: inline-block;
+     font-size: 14px;
+     color: rgb(87, 10, 122);
+ }
+ 
+ .acuerdo a{
+     color: rgb(87, 10, 122);
+ }
+ .acuerdo a:hover{
+     color: rgb(248, 234, 255);
+     text-decoration: underline;
+     transition: 300ms;
+     
+ }
+ 
+ 
 

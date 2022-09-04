@@ -57,8 +57,17 @@ nav a {
     column-gap: 15%; }
 
 #redes-icons {
-  font-size: 50px; }
+  font-size: 40px; }
+  #redes-icons a :hover {
+    font-size: 60px;
+    transition: 1s all;
+    transform: scale(1.4);
+    column-gap: 40px;
+    background-color: #00b7ff;
+    padding: 8px 12px;
+    border-radius: 7px; }
 
+/*main index*/
 .display, .carrusel, .tarjetas, #videos, #videos iframe, #cursospopulares {
   display: flex; }
 
@@ -79,10 +88,9 @@ nav a {
   min-width: 200px;
   height: 200px;
   text-align: center;
-  padding: 10px;
   margin-left: 30px;
   margin-right: 30px;
-  padding-top: 5%;
+  padding-top: 4%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 50px;
   color: white;
@@ -94,17 +102,19 @@ nav a {
 #videos {
   overflow-y: auto;
   width: 100%;
+  height: 270px;
   justify-content: space-evenly;
   flex-direction: row;
   margin-bottom: 5px;
   padding: 10px; }
   #videos iframe {
     width: 100%;
+    overflow-y: auto;
     object-fit: cover;
     margin-right: 5px;
     border-radius: 10px;
-    width: 260px;
-    height: 210px; }
+    width: 240px;
+    height: 250px; }
   #videos :hover {
     transform: scale(1.1, 1.1);
     position: relative; }
@@ -133,7 +143,7 @@ nav a {
     background-color: rgba(0, 30, 112, 0.623);
     transition: 0.5s;
     border-radius: 7px;
-    padding: 8px 100px; }
+    padding: 8px 48%; }
 
 #cursospopulares {
   margin-top: 0%;
@@ -152,10 +162,175 @@ nav a {
   #cursospopulares img {
     width: 100%; }
 
+/*main cursos*/
+#botonescursos {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+#botonescursos button:hover {
+  width: 70%;
+  transform: scale(1.1, 1.1);
+  border-radius: 15px;
+  box-shadow: black;
+  justify-self: center;
+  align-self: center; }
+
+.botonesclases img {
+  width: 100%; }
+
+/*main iniciar sesion*/
+#form legend {
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.control {
+  width: 98%;
+  background: rgba(229, 185, 250, 0.808);
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px; }
+
+#form .registrar {
+  height: 40px;
+  text-align: center;
+  background-color: rgba(221, 171, 233, 0.952);
+  font-size: 15px;
+  color: black; }
+
+.recordar {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0%; }
+
+#form .checkbox1 {
+  size: 2%;
+  padding: 0; }
+
+.suscrib a {
+  color: aliceblue; }
+
+.suscrib a:hover {
+  color: darkorchid;
+  text-decoration: underline;
+  transition: 300ms; }
+
+/*main sobremi*/
+#sobremi {
+  background-color: thistle;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  height: 100%; }
+
+.presentacion {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex-wrap: wrap;
+  column-gap: 5%; }
+
+.hola {
+  justify-content: space-between;
+  width: 500px;
+  height: 70%; }
+
+.conteiner__card {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%); }
+
+.sobremi1 {
+  width: 100%; }
+
+.card {
+  width: 500px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  object-fit: cover; }
+
+.cover__card {
+  width: 100%;
+  height: 250px;
+  border-radius: 14px;
+  overflow: hidden; }
+
+.cover__card img {
+  width: 100%; }
+
+.infoacademica {
+  margin-top: 15px; }
+
+/*main contacto*/
+#contacto {
+  background-image: url(../img/imgcomentario.webp);
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 4%;
+  padding-bottom: 7%;
+  background-repeat: no-repeat; }
+
+.form2 {
+  width: 450px;
+  height: 500px;
+  margin: auto;
+  background-color: rgba(204, 111, 247, 0.664);
+  padding: 30px 20px 30px 40px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-family: sans-serif; }
+
+.consulta {
+  color: #570a7a;
+  font-size: 25px;
+  padding-bottom: 20px; }
+
+.control1 {
+  width: 350px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.856);
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+.acuerdo {
+  display: inline-block;
+  font-size: 14px;
+  color: #570a7a; }
+
+.acuerdo a {
+  color: #570a7a; }
+
+.acuerdo a:hover {
+  color: #f8eaff;
+  text-decoration: underline;
+  transition: 300ms; }
+
 @media only screen and (max-width: 900px) {
   body {
     margin: 0px;
     padding: 0px; }
+  /*header*/
   .header-menu {
     flex-direction: column;
     align-items: center;
@@ -173,9 +348,9 @@ nav a {
       transform: scale(1); }
   nav a:hover {
     background-color: lavender;
+    padding: 5px;
     color: rgba(0, 0, 0, 0.623); }
   .iconomenu {
-    display: flex;
     background: none;
     cursor: pointer;
     border: none;
@@ -183,24 +358,29 @@ nav a {
     padding: 0px 0px 30px 60%;
     line-height: 60px;
     display: block; }
-  #mobilemenu:checked ~ .header-menu {
-    height: 140px;
-    visibility: visible;
-    opacity: 1;
-    transition: all 300ms ease; }
+  /*inicio*/
   .carrusel {
     width: 100%;
     height: 100%; }
   .tarjetas {
     flex-direction: column; }
+  .principio {
+    padding-top: 20%; }
   #blog {
     padding-left: 0%;
     justify-content: center;
     align-content: center; }
+  #videos {
+    height: 150px; }
+    #videos iframe {
+      width: 160px;
+      height: 130px; }
   #bot {
     margin-right: 7%;
     justify-self: center;
     align-self: center; }
+  .boton:hover {
+    padding: 8px 40%; }
   #cursospopulares {
     display: flex;
     width: 100%;
@@ -211,6 +391,37 @@ nav a {
     justify-content: center;
     align-content: center;
     background: none; }
+  /*inciosesion*/
+  #grillaform1 {
+    display: flex;
+    background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    background-repeat: no-repeat; }
+  #imgformmobile {
+    display: none; }
+  #iniciarsesion form {
+    background-color: rgba(100, 148, 237, 0.788);
+    width: 90%;
+    padding: 5%;
+    margin: 5%; }
+  /*main sobremi*/
+  .card {
+    width: 390px; }
+  /*main contacto*/
+  .form2 {
+    width: 380px;
+    height: 500px; }
+  .control1 {
+    width: 300px; }
+  #subirarchivo {
+    width: 310px; }
+  /*footer*/
   .footercontent {
     padding-right: 30%;
     padding-top: 20%;
@@ -223,7 +434,36 @@ nav a {
     margin-top: 25%; } }
 
 @media (min-width: 900px) {
-  .iconomenu {
-    display: none; }
-  #mobilemenu {
-    display: none; } }
+  /*iniciosesion*/
+  #grillaform1 {
+    display: grid;
+    grid-template-columns: 60% 37%;
+    grid-template-rows: 600px;
+    grid-template-areas: "foto1 iniciarsesion";
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    object-fit: cover; }
+  .imgform {
+    display: grid;
+    grid-area: foto1;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover; }
+  #iniciarsesion form {
+    display: grid;
+    grid-area: iniciarsesion;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #6494ed;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    font-family: sans-serif;
+    color: aliceblue;
+    justify-self: center;
+    align-self: center; } }

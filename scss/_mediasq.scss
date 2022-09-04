@@ -3,6 +3,8 @@
         margin: 0px;
         padding: 0px;
     }
+
+    /*header*/
     .header-menu{
         flex-direction: column;
         align-items: center;
@@ -11,7 +13,6 @@
         left: 0;
         top: 120px;
         width: 100%;
-        
         z-index: 100;
         opacity: 0;
         visibility: hidden;
@@ -24,16 +25,13 @@
 
     }
  
-    
     nav a:hover{
         background-color: lavender;
+        padding: 5px;
         color: rgba(0, 0, 0, 0.623);
     }
 
-   
-
     .iconomenu{
-        display: flex;
         background: none;
         cursor: pointer;
         border: none;
@@ -41,101 +39,174 @@
         padding: 0px 0px 30px 60%;
         line-height: 60px;
         display: block;
-
     }
-    #mobilemenu:checked ~ .header-menu{ 
-        height: 140px;
-        visibility: visible;
-        opacity: 1;
-        transition: all 300ms ease;
-        
-    } 
-
+    
+    /*inicio*/
     .carrusel{
         width: 100%;
         height: 100%;
     }
 
     .tarjetas{
-        flex-direction: column;
-        
-        
+        flex-direction: column;    
     }
-   
-   
+
+    
+    .principio{
+    padding-top: 20%;
+
+}
    
     #blog{
-   padding-left: 0%;
+        padding-left: 0%;
+        justify-content: center;
+        align-content:center ;
    
-   justify-content: center;
-   align-content:center ;
-   
 }
+#videos{
+    height: 150px;
 
-
-
-#bot{
-    margin-right: 7%;
-    
-    justify-self: center;
-    align-self: center; 
-    
+    iframe{
+        width: 160px;
+        height: 130px;   
+    }
 }
-
-
-
-#cursospopulares{
-    display: flex;
-    width: 100%;
-    margin-top: 2%;
-    padding-left: 0%;
-    padding-right: 0%;
-   margin-left: 0%;
-    justify-content: center;
-    align-content: center;
-    background: none;
+    
+    #bot{
+        margin-right: 7%;
+        justify-self: center;
+        align-self: center; 
     
 }
 
+    .boton{
+        &:hover{
+       
+            padding: 8px 40%;
+    } 
+}
+
+    #cursospopulares{
+        display: flex;
+        width: 100%;
+        margin-top: 2%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0%;
+        justify-content: center;
+        align-content: center;
+        background: none;
+    
+}
+
+
+    /*inciosesion*/
+    #grillaform1 {
+        display: flex;
+        background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
+        background-size: 100%;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        padding-top: 4%;
+        padding-bottom: 7%;
+        background-repeat: no-repeat;  
+ }
+
+    #imgformmobile{
+        display: none;
+    
+ }
+ 
+    #iniciarsesion form{
+        background-color:rgba(100, 148, 237, 0.788);
+        width: 90%;
+        padding: 5%;  
+        margin: 5%;    
+}
+
+/*main sobremi*/
+.card{
+    width: 390px;
+}
+
+/*main contacto*/
+
+.form2{   
+    width: 380px;
+    height: 500px;
+}
+
+.control1{    
+    width: 300px;
+}
+
+#subirarchivo{
+    width: 310px;
+}
+
+
+/*footer*/
 .footercontent{
     padding-right: 30%;
     padding-top: 20%;
     margin-right: 30%;
-    padding-bottom:0 ;
-    
+    padding-bottom:0 ;    
 }
 
 .redessociales li{
    
    flex-direction: row;
-    margin-left: 60%;
-    
-    
+    margin-left: 60%;      
 }
 
 .footer h5{
 margin-top: 25%;
-
+}
 
 }
 
 
-}
 
-
-
-
-
-@media ( min-width: 900px){
-    .iconomenu{
-        
-        display: none;
-
-    }
-    #mobilemenu{
-        display: none;
-    }
-   
+@media ( min-width:900px){
     
-  
+/*iniciosesion*/
+    #grillaform1{
+        display: grid;
+        grid-template-columns: 60% 37%;
+        grid-template-rows: 600px;
+        grid-template-areas: "foto1 iniciarsesion" ;
+        justify-content: space-evenly;
+        padding-bottom: 5px;
+        object-fit: cover;       
+    }
+    
+    .imgform{
+        display: grid;
+        grid-area: foto1;
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+        align-self: center;
+        object-fit: cover;  
+    }
+
+    #iniciarsesion form{
+        display: grid;
+        grid-area: iniciarsesion;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: rgb(100, 148, 237);
+        padding: 15px 15px;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+        font-family: sans-serif;
+        color: aliceblue;
+        justify-self: center;
+        align-self: center;      
+    }
 }
