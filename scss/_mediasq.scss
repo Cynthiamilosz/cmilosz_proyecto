@@ -64,19 +64,18 @@
    
 }
 #videos{
-    height: 150px;
+    height: 180px;
 
     iframe{
         width: 160px;
-        height: 130px;   
+        height: 140px;   
     }
 }
     
     #bot{
         margin-right: 7%;
         justify-self: center;
-        align-self: center; 
-    
+        align-self: center;    
 }
 
     .boton{
@@ -130,6 +129,49 @@
 .card{
     width: 390px;
 }
+
+/*main staff*/
+
+#fondodegrade{
+    
+    height: 600px;
+}
+.containerslider{
+    width: 90%;
+}
+
+.container1{
+    width: 90%;
+    height: 90%;
+}
+
+.tarjeton{
+    width: 75%;
+    height: 400px;
+    
+    img{
+        width: 100%;
+        height: 50%;
+    } 
+}
+
+.infoacademica2{
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 10px;
+   
+    h2{
+        size: 10px;
+        width: 200px;
+    }
+    p{
+        margin-top: 10px;
+        margin-right: 10px;
+        size: 10px;
+        width: 200px;
+    }
+}
+
 
 /*main contacto*/
 
@@ -209,4 +251,19 @@ margin-top: 25%;
         justify-self: center;
         align-self: center;      
     }
+}
+
+
+
+.recordar{
+ color: aliceblue;
+}
+
+.registrar{
+    color: aliceblue;
+    margin-top: 15px;
+}
+
+.suscrib{
+    color: aliceblue;
 }

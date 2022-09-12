@@ -59,16 +59,16 @@ nav a {
 #redes-icons {
   font-size: 40px; }
   #redes-icons a :hover {
-    font-size: 60px;
-    transition: 1s all;
-    transform: scale(1.4);
+    font-size: 45px;
+    transition: 0.3s all;
+    transform: scale(1.2);
     column-gap: 40px;
     background-color: #00b7ff;
     padding: 8px 12px;
     border-radius: 7px; }
 
 /*main index*/
-.display, .carrusel, .tarjetas, #videos, #videos iframe, #cursospopulares {
+.display, .carrusel, .tarjetas, #videos, #videos iframe {
   display: flex; }
 
 .carrusel {
@@ -97,12 +97,12 @@ nav a {
   background-color: cornflowerblue; }
 
 #blog {
-  padding: 5px 0px 5px 5px; }
+  padding: 5px 0px 2px 5px; }
 
 #videos {
   overflow-y: auto;
   width: 100%;
-  height: 270px;
+  height: 275px;
   justify-content: space-evenly;
   flex-direction: row;
   margin-bottom: 5px;
@@ -140,27 +140,30 @@ nav a {
     color: ivory;
     align-self: inherit; }
   .boton:hover {
-    background-color: rgba(0, 30, 112, 0.623);
-    transition: 0.5s;
+    background: -webkit-linear-gradient(-45deg, #00000000 10%, #111a5e 20%, #1e539e 35%, #f15f99 60%, #7800a8 80%, #00000000 90%);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: .5s all;
     border-radius: 7px;
-    padding: 8px 48%; }
+    padding: 7.5px 42%; }
 
 #cursospopulares {
   margin-top: 0%;
   margin-bottom: 10px;
-  width: 98%;
-  margin-left: 1%;
+  width: 100%;
   justify-content: center;
   align-content: center;
-  background: none;
   border: none;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s all; }
   #cursospopulares:hover {
-    transform: scale(1.1, 1.1);
-    border-radius: 15px;
-    box-shadow: black; }
-  #cursospopulares img {
-    width: 100%; }
+    transform: scale(1.02);
+    border-radius: 15px; }
+
+.imgtopcursos {
+  width: 100%;
+  height: 100%; }
 
 /*main cursos*/
 #botonescursos {
@@ -170,14 +173,13 @@ nav a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr; }
-
-#botonescursos button:hover {
-  width: 70%;
-  transform: scale(1.1, 1.1);
-  border-radius: 15px;
-  box-shadow: black;
-  justify-self: center;
-  align-self: center; }
+  #botonescursos button:hover {
+    width: 70%;
+    transform: scale(1.1, 1.1);
+    border-radius: 15px;
+    box-shadow: black;
+    justify-self: center;
+    align-self: center; }
 
 .botonesclases img {
   width: 100%; }
@@ -197,7 +199,7 @@ nav a {
   border: none;
   margin-bottom: 20px; }
 
-#form .registrar {
+#form .sesion {
   height: 40px;
   text-align: center;
   background-color: rgba(221, 171, 233, 0.952);
@@ -215,11 +217,19 @@ nav a {
 
 .suscrib a {
   color: aliceblue; }
+  .suscrib a:hover {
+    color: darkorchid;
+    text-decoration: underline;
+    transition: 300ms; }
 
-.suscrib a:hover {
-  color: darkorchid;
-  text-decoration: underline;
-  transition: 300ms; }
+.registrar {
+  margin-top: 5px; }
+  .registrar a {
+    color: aliceblue; }
+    .registrar a:hover {
+      color: darkorchid;
+      text-decoration: underline;
+      transition: 300ms; }
 
 /*main sobremi*/
 #sobremi {
@@ -269,12 +279,104 @@ nav a {
   height: 250px;
   border-radius: 14px;
   overflow: hidden; }
-
-.cover__card img {
-  width: 100%; }
+  .cover__card img {
+    width: 100%;
+    height: 90%; }
 
 .infoacademica {
-  margin-top: 15px; }
+  margin-top: 5px; }
+
+/*main staff*/
+#fondodegrade {
+  background-image: url(../img/degrade1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px; }
+
+.containerslider {
+  max-width: 1000px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px; }
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  width: 800px;
+  height: 600px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container1 input {
+    display: none; }
+
+.tarjetones {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.tarjeton {
+  position: absolute;
+  margin: 10px;
+  padding: 20px;
+  background-image: url(../img/degrade4.jpg);
+  background-size: cover;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 580px;
+  border-radius: 14px;
+  overflow: hidden;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.1s; }
+  .tarjeton img {
+    width: 100%;
+    height: 70%; }
+
+.infoacademica2 {
+  width: 500px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #111a5e; }
+  .infoacademica2 p {
+    margin-top: 10px;
+    size: 15px;
+    text-transform: uppercase; }
+
+#item2:checked ~ .tarjetones #selector1,
+#item1:checked ~ .tarjetones #selector5,
+#item5:checked ~ .tarjetones #selector4,
+#item4:checked ~ .tarjetones #selector3,
+#item3:checked ~ .tarjetones #selector2 {
+  transform: translateX(-40%) scale(0.7);
+  opacity: 0.5;
+  z-index: 0; }
+
+#item5:checked ~ .tarjetones #selector1,
+#item1:checked ~ .tarjetones #selector2,
+#item2:checked ~ .tarjetones #selector3,
+#item3:checked ~ .tarjetones #selector4,
+#item4:checked ~ .tarjetones #selector5 {
+  transform: translateX(40%) scale(0.7);
+  opacity: 0.5;
+  z-index: 0; }
+
+#item1:checked ~ .tarjetones #selector1,
+#item2:checked ~ .tarjetones #selector2,
+#item3:checked ~ .tarjetones #selector3,
+#item4:checked ~ .tarjetones #selector4,
+#item5:checked ~ .tarjetones #selector5 {
+  transform: translateX(0) scale(1);
+  z-index: 1; }
 
 /*main contacto*/
 #contacto {
@@ -317,14 +419,12 @@ nav a {
   display: inline-block;
   font-size: 14px;
   color: #570a7a; }
-
-.acuerdo a {
-  color: #570a7a; }
-
-.acuerdo a:hover {
-  color: #f8eaff;
-  text-decoration: underline;
-  transition: 300ms; }
+  .acuerdo a {
+    color: #570a7a; }
+  .acuerdo :hover {
+    color: #f8eaff;
+    text-decoration: underline;
+    transition: 300ms; }
 
 @media only screen and (max-width: 900px) {
   body {
@@ -371,10 +471,10 @@ nav a {
     justify-content: center;
     align-content: center; }
   #videos {
-    height: 150px; }
+    height: 180px; }
     #videos iframe {
       width: 160px;
-      height: 130px; }
+      height: 140px; }
   #bot {
     margin-right: 7%;
     justify-self: center;
@@ -413,6 +513,32 @@ nav a {
   /*main sobremi*/
   .card {
     width: 390px; }
+  /*main staff*/
+  #fondodegrade {
+    height: 600px; }
+  .containerslider {
+    width: 90%; }
+  .container1 {
+    width: 90%;
+    height: 90%; }
+  .tarjeton {
+    width: 75%;
+    height: 400px; }
+    .tarjeton img {
+      width: 100%;
+      height: 50%; }
+  .infoacademica2 {
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 10px; }
+    .infoacademica2 h2 {
+      size: 10px;
+      width: 200px; }
+    .infoacademica2 p {
+      margin-top: 10px;
+      margin-right: 10px;
+      size: 10px;
+      width: 200px; }
   /*main contacto*/
   .form2 {
     width: 380px;
@@ -467,3 +593,13 @@ nav a {
     color: aliceblue;
     justify-self: center;
     align-self: center; } }
+
+.recordar {
+  color: aliceblue; }
+
+.registrar {
+  color: aliceblue;
+  margin-top: 15px; }
+
+.suscrib {
+  color: aliceblue; }

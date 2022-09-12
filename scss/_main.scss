@@ -40,7 +40,7 @@
 
 
 #blog{
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0px 2px 5px;
     
 }
 
@@ -48,7 +48,7 @@
     @extend .display;
     overflow-y: auto;
     width:100%;
-    height: 270px;
+    height: 275px;
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 5px;
@@ -84,6 +84,7 @@
     background-color: $blue-detalles;
     margin-bottom: 10px;
     
+    
 }
 
 .boton{
@@ -91,48 +92,54 @@
     border: none;
     justify-self: center;
     align-self: auto; 
+   
 
     a{
         font-family: sans-serif;
         font-size: 12pt;
         color: ivory;
         align-self: inherit;
+
     }
 
+
     &:hover{
-        background-color: rgba(0, 30, 112, 0.623);
-        transition: 0.5s;
+        background: -webkit-linear-gradient(-45deg, #00000000 10%, #111a5e 20%, #1e539e 35%, #f15f99 60%,#7800a8 80%, #00000000 90%);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: .5s all;
         border-radius: 7px;  
-        padding: 8px 48%;
-    }
-    
+        padding: 7.5px 42%;
+    } 
 }
 
 
 #cursospopulares{
     margin-top: 0%;
     margin-bottom: 10px;
-    @extend .display;
-    width: 98%;
-    margin-left: 1%;
+    width: 100%;
     justify-content: center;
     align-content: center;
-    background: none;
     border: none;
     overflow: hidden;
-
-
+    cursor: pointer;
+	transition: .5s all;
     &:hover{
-        transform: scale(1.1,1.1);
-        border-radius: 15px;
-        box-shadow: black;   
+        transform: scale(1.02);
+        border-radius: 15px;  
+      
     }
-
-    img{
-        width: 100%;    
-     }
-
 }
+
+.imgtopcursos{
+    width: 100%;   
+	height: 100%;
+   
+    
+    
+} 
+
+
 
 
 /*main cursos*/
@@ -143,18 +150,18 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+
+    button:hover{
+        width: 70%;
+        transform: scale(1.1,1.1);  
+        border-radius: 15px;
+        box-shadow: black;
+        justify-self: center;
+        align-self: center;   
+     }
  }
     
- #botonescursos button:hover{
-    width: 70%;
-    transform: scale(1.1,1.1);  
-    border-radius: 15px;
-    box-shadow: black;
-    justify-self: center;
-    align-self: center;   
- }
- 
- 
+
  .botonesclases img{
      width: 100%;
  }
@@ -179,7 +186,7 @@
     margin-bottom: 20px;   
 }
 
-#form .registrar{
+#form .sesion{
     height: 40px;
     text-align: center;
     background-color: rgba(221, 171, 233, 0.952);
@@ -198,13 +205,28 @@
 }
 
 .suscrib a{
-    color: aliceblue;   
+    color: aliceblue; 
+    &:hover{
+        color: darkorchid;
+        text-decoration: underline;
+        transition: 300ms;    
+    }  
 }
-.suscrib a:hover{
-    color: darkorchid;
-    text-decoration: underline;
-    transition: 300ms;    
+
+.registrar {
+    margin-top: 5px;
+
+    a{
+        color: aliceblue; 
+        &:hover{
+            color: darkorchid;
+            text-decoration: underline;
+            transition: 300ms;    
+        }  
+    }
 }
+
+
 
 
 /*main sobremi*/
@@ -261,15 +283,126 @@
     height: 250px;
     border-radius: 14px;
     overflow: hidden;
-}
-
-.cover__card img{
-    width: 100%;
+    img{
+        width: 100%;
+        height: 90%;
+    } 
 }
 
 .infoacademica{
-    margin-top: 15px;
+    margin-top: 5px;
 }
+
+
+/*main staff*/
+#fondodegrade{
+    background-image: url(../img/degrade1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+
+.containerslider{
+    max-width: 1000px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+
+.container1{
+    width: 100%;
+    height: 100%;
+    width: 800px;
+    height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        display: none;
+    }
+}
+
+.tarjetones{
+    position: relative;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.tarjeton{
+    position: absolute;
+    margin: 10px;
+    padding: 20px;
+    background-image: url(../img/degrade4.jpg);
+    background-size: cover;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 580px;
+    border-radius: 14px;
+    overflow: hidden;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.1s;
+    img{
+        width: 100%;
+        height: 70%;
+    } 
+}
+
+.infoacademica2{
+    width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #111a5e;
+    p{
+        margin-top: 10px;
+        size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+
+#item2:checked ~ .tarjetones #selector1,
+#item1:checked ~ .tarjetones #selector5,
+#item5:checked ~ .tarjetones #selector4,
+#item4:checked ~ .tarjetones #selector3,
+#item3:checked ~ .tarjetones #selector2 {
+    transform: translateX(-40%) scale(0.7);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#item5:checked ~ .tarjetones #selector1,
+#item1:checked ~ .tarjetones #selector2,
+#item2:checked ~ .tarjetones #selector3,
+#item3:checked ~ .tarjetones #selector4,
+#item4:checked ~ .tarjetones #selector5 {
+    transform: translateX(40%) scale(0.7);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#item1:checked ~ .tarjetones #selector1,
+#item2:checked ~ .tarjetones #selector2,
+#item3:checked ~ .tarjetones #selector3,
+#item4:checked ~ .tarjetones #selector4,
+#item5:checked ~ .tarjetones #selector5 {
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
 
 
 /*main contacto*/
@@ -318,17 +451,20 @@
      display: inline-block;
      font-size: 14px;
      color: rgb(87, 10, 122);
+
+     a{
+        color: rgb(87, 10, 122);
+    }
+
+    :hover{
+        color: rgb(248, 234, 255);
+        text-decoration: underline;
+        transition: 300ms;
+        
+    }
  }
  
- .acuerdo a{
-     color: rgb(87, 10, 122);
- }
- .acuerdo a:hover{
-     color: rgb(248, 234, 255);
-     text-decoration: underline;
-     transition: 300ms;
-     
- }
+
  
  
 
