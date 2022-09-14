@@ -98,8 +98,24 @@
     
 }
 
+ /*cursos*/
+#botonescursos{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 
+/*testimonios*/
+.testimoniosslider{
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.testimonios{
+   
+    height: 400px;
+    width: 400px;
+}
 
     /*inciosesion*/
     #grillaform1 {
@@ -121,7 +137,7 @@
  }
  
     #iniciarsesion form{
-        background-color:rgba(100, 148, 237, 0.788);
+        background-color:rgba(85, 173, 255, 0.644);
         width: 90%;
         padding: 5%;  
         margin: 5%;    
