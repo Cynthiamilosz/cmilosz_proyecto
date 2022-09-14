@@ -133,14 +133,8 @@
 
 .imgtopcursos{
     width: 100%;   
-	height: 100%;
-   
-    
-    
+	height: 100%;   
 } 
-
-
-
 
 /*main cursos*/
 #botonescursos{
@@ -160,12 +154,140 @@
         align-self: center;   
      }
  }
-    
 
  .botonesclases img{
-     width: 100%;
+    width: 100%;
+    background-color: transparent !important;
+       border: none;
+}
+    
+
+
+.testimoniosslider{
+    background-image: url(../img/degrade2.jpg);
+    background-size: cover;
+    height: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+
+.testimonios{
+    max-width: 1000px;
+    min-width: 400px;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    object-fit: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tituloplaca{
+  
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    justify-content: center;
+    color: #111a5e; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
  }
+
+.placas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
  
+}
+
+.placa{
+    position: absolute;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 7% ;
+    background: hsl(336, 56%, 59%);
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.1s;
+    
+   
+   
+}
+
+.infoplaca{
+    width: 95%;   
+    font-family: sans-serif;
+    color: #111a5e;
+    justify-items: center;
+    align-items: center;
+   
+    list-style: none;
+    h2{
+        size: 8px;
+    }
+    p{
+        size: 40px;
+        text-transform: uppercase;
+    }
+}
+
+
+#testimonio2:checked ~ .placas #select1,
+#testimonio1:checked ~ .placas #select3,
+#testimonio3:checked ~ .placas #select2 {
+    animation: placaslider 20s  infinite alternate;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#testimonio3:checked ~ .placas #select1,
+#testimonio1:checked ~ .placas #select2,
+#testimonio2:checked ~ .placas #select3 {
+    animation: placaslider 20s  infinite alternate;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#testimonio1:checked ~ .placas #select1,
+#testimonio2:checked ~ .placas #select2,
+#testimonio3:checked ~ .placas #select3 {
+    animation: placaslider 20s  infinite alternate;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+ 
+
 
 /*main iniciar sesion*/
 
