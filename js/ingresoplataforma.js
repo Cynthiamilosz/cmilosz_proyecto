@@ -95,21 +95,4 @@ sesion.addEventListener("click", async function (event) {
   }
 });
 
-//window.addEventListener("");
-
 cargarPerfilUsuario();
-
-// {/* <section id="plataforma">
-//         <div class="textbienvenida">
-//           <h1 class="control2">¡Bienvenido...!</h1>
-//           <h2 class="control2">
-//             Aquí podrás acceder a toda la info de tus cursos, así como también
-//             contactarte con tus profesores por dudas y consultas.
-//           </h2>
-//           <h3 class="control2">
-//             ¡Coordiná una videollamada con tu profesor/a acá! 👇
-//           </h3>
-//           <button id="videollamada" type="" value="">Videollamame</button>
-//         </div>
-//       </section>
-//       <div id="imggrilla"></div> */}
