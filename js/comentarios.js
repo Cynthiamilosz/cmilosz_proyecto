@@ -1,0 +1,4 @@
+function cargarOpinion() {}
+
+cargarOpinion();
+cargarOpinion();

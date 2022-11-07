@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0%; }
   body.dark {
-    background: #202020; }
+    filter: grayscale(10) saturate(5) opacity(5); }
 
 header {
   display: flex;
@@ -13,8 +13,6 @@ header {
   align-items: flex-end;
   background-size: cover;
   border-bottom: 5px solid white; }
-  body.dark header {
-    border-bottom: 5px solid #202020; }
 
 .header-menu {
   display: flex;
@@ -37,15 +35,6 @@ header {
     background-color: lavender;
     color: rgba(0, 0, 0, 0.623);
     transition: 0.5s; }
-    body.dark .navbar a:hover:hover {
-      background-color: gray; }
-
-body.dark #drop {
-  background: #202020; }
-  body.dark #drop a {
-    color: aliceblue; }
-    body.dark #drop a:hover {
-      background-color: gray; }
 
 .logo {
   display: flex;
@@ -80,7 +69,7 @@ nav a {
     left: 0%;
     right: unset;
     border-radius: 100px;
-    transition: .3 ease all;
+    transition: 0.3 ease all;
     box-shadow: 0px 0px 2px 2px, rgba(0, 0, 0, 0.2); }
   .switch.active {
     background: orange;
@@ -191,7 +180,7 @@ nav a {
     background: -webkit-linear-gradient(-45deg, #00000000 10%, #111a5e 20%, #1e539e 35%, #f15f99 60%, #7800a8 80%, #00000000 90%);
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: .5s all;
+    transition: 0.5s all;
     border-radius: 7px;
     padding: 7.5px 42%; }
 
@@ -204,7 +193,7 @@ nav a {
   border: none;
   overflow: hidden;
   cursor: pointer;
-  transition: .5s all; }
+  transition: 0.5s all; }
   #cursospopulares:hover {
     transform: scale(1.02);
     border-radius: 15px; }
@@ -312,21 +301,21 @@ nav a {
 #testimonio2:checked ~ .placas #select1,
 #testimonio1:checked ~ .placas #select3,
 #testimonio3:checked ~ .placas #select2 {
-  animation: placaslider 20s  infinite alternate;
+  animation: placaslider 20s infinite alternate;
   opacity: 0.5;
   z-index: 0; }
 
 #testimonio3:checked ~ .placas #select1,
 #testimonio1:checked ~ .placas #select2,
 #testimonio2:checked ~ .placas #select3 {
-  animation: placaslider 20s  infinite alternate;
+  animation: placaslider 20s infinite alternate;
   opacity: 0.5;
   z-index: 0; }
 
 #testimonio1:checked ~ .placas #select1,
 #testimonio2:checked ~ .placas #select2,
 #testimonio3:checked ~ .placas #select3 {
-  animation: placaslider 20s  infinite alternate;
+  animation: placaslider 20s infinite alternate;
   z-index: 1; }
 
 /*main iniciar sesion*/
@@ -344,7 +333,7 @@ nav a {
   border: none;
   margin-bottom: 20px; }
 
-#form .sesion {
+.btnsesion {
   height: 40px;
   text-align: center;
   background-color: rgba(221, 171, 233, 0.952);
@@ -375,6 +364,38 @@ nav a {
       color: darkorchid;
       text-decoration: underline;
       transition: 300ms; }
+
+#plataforma {
+  background-color: #f0a59b;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 5%; }
+
+.textbienvenida {
+  color: aliceblue;
+  width: 65%;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10%; }
+
+.control2 {
+  padding-bottom: 25px; }
+
+#videollamada {
+  height: 60px;
+  width: 90%;
+  background: #170549;
+  border: none;
+  justify-self: center;
+  border-radius: 5px;
+  color: #d6b936; }
+  #videollamada:hover {
+    background: #d6b936;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 5px;
+    color: #170549; }
 
 /*main sobremi*/
 #sobremi {
@@ -666,7 +687,6 @@ nav a {
   /*inciosesion*/
   #grillaform1 {
     display: flex;
-    background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
     background-size: 100%;
     background-position: center;
     background-size: cover;
@@ -682,6 +702,10 @@ nav a {
     width: 90%;
     padding: 5%;
     margin: 5%; }
+  .textbienvenida {
+    padding-top: 0; }
+  .control2 {
+    padding-bottom: 15px; }
   /*main sobremi*/
   .card {
     width: 390px; }
@@ -735,15 +759,18 @@ nav a {
   /*iniciosesion*/
   #grillaform1 {
     display: grid;
-    grid-template-columns: 60% 37%;
-    grid-template-rows: 600px;
+    grid-template-columns: 47% 50%;
+    grid-template-rows: 700px;
     grid-template-areas: "foto1 iniciarsesion";
     justify-content: space-evenly;
+    column-gap: 20px;
     padding-bottom: 5px;
     object-fit: cover; }
-  .imgform {
+  #imggrilla {
+    background-image: url(../img/imgform3c.JPG);
+    background-repeat: no-repeat;
     display: grid;
-    grid-area: foto1;
+    grid-area: iniciarsesion;
     width: 100%;
     height: 100%;
     justify-self: center;

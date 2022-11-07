@@ -1,287 +1,299 @@
-@media only screen and (max-width:900px){
-    body{
-        margin: 0px;
-        padding: 0px;
-    }
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
 
-    /*header*/
-    .header-menu{
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(137, 116, 177);
-        position: fixed;
-        left: 0;
-        top: 120px;
-        width: 100%;
-        z-index: 100;
-        opacity: 0;
-        visibility: hidden;
-        padding: 20px 0;
-        overflow-y: auto;
+  /*header*/
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(137, 116, 177);
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 0;
+    overflow-y: auto;
 
-        li  a :hover{
-            transform: scale(1);
-        } 
+    li a :hover {
+      transform: scale(1);
+    }
+  }
 
-    }
- 
-    nav a:hover{
-        background-color: lavender;
-        padding: 5px;
-        color: rgba(0, 0, 0, 0.623);
-    }
+  nav a:hover {
+    background-color: lavender;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.623);
+  }
 
-    .iconomenu{
-        background: none;
-        cursor: pointer;
-        border: none;
-        font-size: 10px;
-        padding: 0px 0px 30px 60%;
-        line-height: 60px;
-        display: block;
-    }
-    
-    /*inicio*/
-    .carrusel{
-        width: 100%;
-        height: 100%;
-    }
+  .iconomenu {
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 10px;
+    padding: 0px 0px 30px 60%;
+    line-height: 60px;
+    display: block;
+  }
 
-    .tarjetas{
-        flex-direction: column;    
-    }
+  /*inicio*/
+  .carrusel {
+    width: 100%;
+    height: 100%;
+  }
 
-    
-    .principio{
+  .tarjetas {
+    flex-direction: column;
+  }
+
+  .principio {
     padding-top: 20%;
+  }
 
-}
-   
-    #blog{
-        padding-left: 0%;
-        justify-content: center;
-        align-content:center ;
-   
-}
-#videos{
+  #blog {
+    padding-left: 0%;
+    justify-content: center;
+    align-content: center;
+  }
+  #videos {
     height: 180px;
 
-    iframe{
-        width: 160px;
-        height: 140px;   
+    iframe {
+      width: 160px;
+      height: 140px;
     }
-}
-    
-    #bot{
-        margin-right: 7%;
-        justify-self: center;
-        align-self: center;    
-}
+  }
 
-    .boton{
-        &:hover{
-       
-            padding: 8px 40%;
-    } 
-}
+  #bot {
+    margin-right: 7%;
+    justify-self: center;
+    align-self: center;
+  }
 
-    #cursospopulares{
-        display: flex;
-        width: 100%;
-        margin-top: 2%;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin-left: 0%;
-        justify-content: center;
-        align-content: center;
-        background: none;
-    
-}
+  .boton {
+    &:hover {
+      padding: 8px 40%;
+    }
+  }
 
- /*cursos*/
-#botonescursos{
+  #cursospopulares {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    justify-content: center;
+    align-content: center;
+    background: none;
+  }
+
+  /*cursos*/
+  #botonescursos {
     margin-top: 0px;
     margin-bottom: 5px;
-}
+  }
 
-/*testimonios*/
-.testimoniosslider{
+  /*testimonios*/
+  .testimoniosslider {
     height: 450px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+  }
 
-.testimonios{
-   
+  .testimonios {
     height: 400px;
     width: 400px;
-}
+  }
 
-    /*inciosesion*/
-    #grillaform1 {
-        display: flex;
-        background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
-        background-size: 100%;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        padding-top: 4%;
-        padding-bottom: 7%;
-        background-repeat: no-repeat;  
- }
+  /*inciosesion*/
+  #grillaform1 {
+    display: flex;
+    //background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    background-repeat: no-repeat;
+  }
 
-    #imgformmobile{
-        display: none;
-    
- }
- 
-    #iniciarsesion form{
-        background-color:rgba(85, 173, 255, 0.644);
-        width: 90%;
-        padding: 5%;  
-        margin: 5%;    
-}
+  #imgformmobile {
+    display: none;
+  }
 
-/*main sobremi*/
-.card{
-    width: 390px;
-}
-
-/*main staff*/
-
-#fondodegrade{
-    
-    height: 600px;
-}
-.containerslider{
+  #iniciarsesion form {
+    background-color: rgba(85, 173, 255, 0.644);
     width: 90%;
-}
+    padding: 5%;
+    margin: 5%;
+  }
 
-.container1{
+  .textbienvenida {
+    padding-top: 0;
+  }
+
+  .control2 {
+    padding-bottom: 15px;
+  }
+
+  /*main sobremi*/
+  .card {
+    width: 390px;
+  }
+
+  /*main staff*/
+
+  #fondodegrade {
+    height: 600px;
+  }
+  .containerslider {
+    width: 90%;
+  }
+
+  .container1 {
     width: 90%;
     height: 90%;
-}
+  }
 
-.tarjeton{
+  .tarjeton {
     width: 75%;
     height: 400px;
-    
-    img{
-        width: 100%;
-        height: 50%;
-    } 
-}
 
-.infoacademica2{
+    img {
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  .infoacademica2 {
     width: 300px;
     margin-top: 20px;
     margin-right: 10px;
-   
-    h2{
-        size: 10px;
-        width: 200px;
+
+    h2 {
+      size: 10px;
+      width: 200px;
     }
-    p{
-        margin-top: 10px;
-        margin-right: 10px;
-        size: 10px;
-        width: 200px;
+    p {
+      margin-top: 10px;
+      margin-right: 10px;
+      size: 10px;
+      width: 200px;
     }
-}
+  }
 
+  /*main contacto*/
 
-/*main contacto*/
-
-.form2{   
+  .form2 {
     width: 380px;
     height: 500px;
-}
+  }
 
-.control1{    
+  .control1 {
     width: 300px;
-}
+  }
 
-#subirarchivo{
+  #subirarchivo {
     width: 310px;
-}
+  }
 
-
-/*footer*/
-.footercontent{
+  /*footer*/
+  .footercontent {
     padding-right: 30%;
     padding-top: 20%;
     margin-right: 30%;
-    padding-bottom:0 ;    
+    padding-bottom: 0;
+  }
+
+  .redessociales li {
+    flex-direction: row;
+    margin-left: 60%;
+  }
+
+  .footer h5 {
+    margin-top: 25%;
+  }
 }
 
-.redessociales li{
-   
-   flex-direction: row;
-    margin-left: 60%;      
-}
+@media (min-width: 900px) {
+  /*iniciosesion*/
+  //   #grillaform1 {
+  //     display: grid;
+  //     grid-template-columns: 60% 37%;
+  //     grid-template-rows: 600px;
+  //     grid-template-areas: "foto1 iniciarsesion";
+  //     justify-content: space-evenly;
+  //     padding-bottom: 5px;
+  //     object-fit: cover;
+  //   }
 
-.footer h5{
-margin-top: 25%;
-}
+  #grillaform1 {
+    display: grid;
+    grid-template-columns: 47% 50%;
+    grid-template-rows: 700px;
+    grid-template-areas: "foto1 iniciarsesion";
+    justify-content: space-evenly;
+    column-gap: 20px;
+    padding-bottom: 5px;
+    object-fit: cover;
+  }
 
-}
+  #imggrilla {
+    background-image: url(../img/imgform3c.JPG);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-area: iniciarsesion;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+  }
+  //   .imgform {
+  //     display: grid;
+  //     grid-area: foto1;
+  //     width: 100%;
+  //     height: 100%;
+  //     justify-self: center;
+  //     align-self: center;
+  //     object-fit: cover;
+  //   }
 
-
-
-@media ( min-width:900px){
-    
-/*iniciosesion*/
-    #grillaform1{
-        display: grid;
-        grid-template-columns: 60% 37%;
-        grid-template-rows: 600px;
-        grid-template-areas: "foto1 iniciarsesion" ;
-        justify-content: space-evenly;
-        padding-bottom: 5px;
-        object-fit: cover;       
-    }
-    
-    .imgform{
-        display: grid;
-        grid-area: foto1;
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        align-self: center;
-        object-fit: cover;  
-    }
-
-    #iniciarsesion form{
-        display: grid;
-        grid-area: iniciarsesion;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        background-color: rgb(100, 148, 237);
-        padding: 15px 15px;
-        box-sizing: border-box;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        border-radius: 7px;
-        font-family: sans-serif;
-        color: aliceblue;
-        justify-self: center;
-        align-self: center;      
-    }
-}
-
-
-
-.recordar{
- color: aliceblue;
-}
-
-.registrar{
+  #iniciarsesion form {
+    display: grid;
+    grid-area: iniciarsesion;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(100, 148, 237);
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    font-family: sans-serif;
     color: aliceblue;
-    margin-top: 15px;
+    justify-self: center;
+    align-self: center;
+  }
 }
 
-.suscrib{
-    color: aliceblue;
+.recordar {
+  color: aliceblue;
+}
+
+.registrar {
+  color: aliceblue;
+  margin-top: 15px;
+}
+
+.suscrib {
+  color: aliceblue;
 }
