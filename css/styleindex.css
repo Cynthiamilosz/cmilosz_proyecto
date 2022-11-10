@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0%; }
   body.dark {
-    filter: grayscale(10) saturate(5) opacity(5); }
+    background-color: #000;
+    filter: url(#dark-crimson-sepia); }
 
 header {
   display: flex;
@@ -13,6 +14,8 @@ header {
   align-items: flex-end;
   background-size: cover;
   border-bottom: 5px solid white; }
+  body.dark header {
+    border-bottom: 5px solid #202020; }
 
 .header-menu {
   display: flex;
@@ -35,6 +38,13 @@ header {
     background-color: lavender;
     color: rgba(0, 0, 0, 0.623);
     transition: 0.5s; }
+
+#drop .dark {
+  background: #202020; }
+  #drop .dark a {
+    color: aliceblue; }
+    #drop .dark a:hover {
+      background-color: gray; }
 
 .logo {
   display: flex;
@@ -105,6 +115,9 @@ nav a {
     border-radius: 7px; }
 
 /*main index*/
+main.dark {
+  background: black; }
+
 .display, .carrusel, .tarjetas, #videos, #videos iframe {
   display: flex; }
 
@@ -118,6 +131,8 @@ nav a {
   margin-top: 5px;
   background-color: thistle;
   padding: 5%; }
+  .tarjetas.dark {
+    background: black; }
 
 .principio {
   width: 35%;
@@ -144,6 +159,8 @@ nav a {
   flex-direction: row;
   margin-bottom: 5px;
   padding: 10px; }
+  body.dark #videos {
+    background-color: black; }
   #videos iframe {
     width: 100%;
     overflow-y: auto;
@@ -685,7 +702,7 @@ nav a {
     height: 400px;
     width: 400px; }
   /*inciosesion*/
-  #grillaform1 {
+  .grillaform1 {
     display: flex;
     background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
     background-size: 100%;
@@ -758,7 +775,7 @@ nav a {
 
 @media (min-width: 900px) {
   /*iniciosesion*/
-  #grillaform1 {
+  .grillaform1 {
     display: grid;
     grid-template-columns: 60% 37%;
     grid-template-rows: 600px;
@@ -766,7 +783,7 @@ nav a {
     justify-content: space-evenly;
     padding-bottom: 5px;
     object-fit: cover; }
-  #grillaform1 {
+  .grilladeusuario {
     display: grid;
     grid-template-columns: 47% 50%;
     grid-template-rows: 700px;

@@ -18,3 +18,13 @@ if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.remove("dark");
   btnSwitch.classList.remove("active");
 }
+
+const elements = document.querySelectorAll('[data-js="dark"]');
+if (elements.length) {
+  import("https://assets.stoumann.dk/js/css-filter.mjs").then((module) => {
+    const jsClass = module.default;
+    elements.forEach((element) => {
+      new jsClass(element, element.dataset, presets);
+    });
+  });
+}

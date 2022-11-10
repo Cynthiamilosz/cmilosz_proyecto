@@ -13,6 +13,29 @@
  </head>
 
      <body>
+      <div data-js="dark"
+data-filter-file="#svgfilters"
+data-lbl-app-header="CSS &lt;code&gt;filter&lt;/code&gt; Editor"
+data-preview-image="https://assets.stoumann.dk/img/filter01.jpg,https://assets.stoumann.dk/img/filter02.jpg,https://assets.stoumann.dk/img/filter03.jpg,https://assets.stoumann.dk/img/filter04.jpg,https://assets.stoumann.dk/img/filter05.jpg">
+</div>
+
+<svg id="svgfilters" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="dark-crimson-sepia" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+          .33 .33 .33 0 0
+          .33 .33 .33 0 0
+          0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+        <feComponentTransfer in="colormatrix" result="componentTransfer">
+          <feFuncR type="table" tableValues="0.01 0.52 0.97"/>
+          <feFuncG type="table" tableValues="0 0.05 0.81"/>
+          <feFuncB type="table" tableValues="0.02 0.29 0.61"/>
+          <feFuncA type="table" tableValues="0 1"/>
+        </feComponentTransfer>
+        <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+      </filter>
+    </defs>
+  </svg>
       <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
            
@@ -143,5 +166,6 @@
             <!-- JavaScript Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
       <script src="./js/dark-mode.js"></script>
+      <script type="text/javascript" src="/svg-gradient-map/static/js/main.a086e179.js"></script>
      </body>
  </html>

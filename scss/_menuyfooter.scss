@@ -3,7 +3,8 @@ body {
   padding: 0%;
 
   &.dark {
-    filter: grayscale(10) saturate(5) opacity(5);
+    background-color: #000;
+    filter: url(#dark-crimson-sepia);
   }
 }
 
@@ -16,9 +17,9 @@ header {
   background-size: cover;
   border-bottom: 5px solid white;
 
-  //body.dark & {
-  //border-bottom: 5px solid rgb(32, 32, 32);
-  //}
+  body.dark & {
+    border-bottom: 5px solid rgb(32, 32, 32);
+  }
 }
 
 .header-menu {
@@ -51,17 +52,17 @@ header {
   }
 }
 
-//#drop {
-//   body.dark & {
-//     background: rgb(32, 32, 32);
-//     a {
-//       color: aliceblue;
-//       &:hover {
-//         background-color: gray;
-//       }
-//     }
-//   }
-// }
+#drop {
+  & .dark {
+    background: rgb(32, 32, 32);
+    a {
+      color: aliceblue;
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}
 
 .logo {
   display: flex;

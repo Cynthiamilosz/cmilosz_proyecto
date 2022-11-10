@@ -111,7 +111,7 @@
   }
 
   /*inciosesion*/
-  #grillaform1 {
+  .grillaform1 {
     display: flex;
     background-image: url(../img/clases-online-como-profesor-de-espanol-768x512.jpg.webp);
     background-size: 100%;
@@ -224,7 +224,7 @@
 
 @media (min-width: 900px) {
   /*iniciosesion*/
-  #grillaform1 {
+  .grillaform1 {
     display: grid;
     grid-template-columns: 60% 37%;
     grid-template-rows: 600px;
@@ -234,7 +234,7 @@
     object-fit: cover;
   }
 
-  #grillaform1 {
+  .grilladeusuario {
     display: grid;
     grid-template-columns: 47% 50%;
     grid-template-rows: 700px;

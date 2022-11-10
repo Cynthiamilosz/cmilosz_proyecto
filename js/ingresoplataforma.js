@@ -1,9 +1,7 @@
 const grilla = document.querySelector("#grillaform1");
-
 const sesion = document.querySelector(".btnsesion");
-//sesion.addEventListener("click", mostrarDatos);
 
-function mostrarDatos() {
+function procesarDatos() {
   const form = document.forms["formsesion"];
 
   const datos = [];
@@ -11,7 +9,6 @@ function mostrarDatos() {
     datos.push(elemento.value);
     elemento.value = "";
   }
-  console.log(JSON.stringify(datos));
   return datos;
 }
 
@@ -48,6 +45,7 @@ function cargarPerfilUsuario(datosDeUsuario) {
   }
   if (nombreDeUsuario) {
     grilla.innerHTML = "";
+    grilla.setAttribute("class", "grilladeusuario");
     const newSection = document.createElement("section");
     newSection.setAttribute("id", "plataforma");
 
@@ -86,11 +84,10 @@ function cargarPerfilUsuario(datosDeUsuario) {
 
 sesion.addEventListener("click", async function (event) {
   event.preventDefault();
-  const datos = mostrarDatos();
-  const resultadoModal = await mostrarModal();
+  const datos = procesarDatos();
+  const resultadoModal = mostrarModal();
   cargarPerfilUsuario(datos);
   if (resultadoModal) {
-    console.log("datomodal", datos);
     guardarSesion(datos);
   }
 });

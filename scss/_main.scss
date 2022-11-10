@@ -1,4 +1,9 @@
 /*main index*/
+main {
+  &.dark {
+    background: black;
+  }
+}
 .display {
   display: flex;
 }
@@ -15,6 +20,9 @@
   margin-top: 5px;
   background-color: $rosado-fondos;
   padding: 5%;
+  &.dark {
+    background: black;
+  }
 }
 
 @mixin estiloprincipios($ancho, $alto, $margenderecho, $margenizquierdo) {
@@ -41,6 +49,9 @@
 }
 
 #videos {
+  body.dark & {
+    background-color: black;
+  }
   @extend .display;
   overflow-y: auto;
   width: 100%;
