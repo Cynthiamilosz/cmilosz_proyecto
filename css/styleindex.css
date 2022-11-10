@@ -719,7 +719,7 @@ main.dark {
   #imgformmobile {
     display: none; }
   #iniciarsesion form {
-    background-color: rgba(85, 173, 255, 0.288);
+    background-color: rgba(85, 173, 255, 0.26);
     width: 90%;
     padding: 5%;
     margin: 5%;
@@ -758,8 +758,10 @@ main.dark {
       size: 10px;
       width: 200px; }
   /*main contacto*/
+  .formulariodecontacto {
+    width: 380px; }
   .form2 {
-    width: 330px;
+    width: 350px;
     height: 500px;
     margin: auto; }
   .control1 {
